@@ -1,5 +1,4 @@
 // Init swiper sliders (Testimonials carousel)
-// Config ab seedha yahan JS file mein hai (HTML se JSON nikal di gayi hai)
 function initSwiper() {
   document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
     const config = {
@@ -31,7 +30,7 @@ function initSwiper() {
 }
 window.addEventListener("load", initSwiper);
 
-// Initialize AOS (Animate On Scroll) -- THIS INIT CALL WAS MISSING/NOT WORKING
+// Initialize AOS (Animate On Scroll) 
 window.addEventListener('load', () => {
   AOS.init({
     duration: 600,
@@ -55,11 +54,7 @@ try {
   console.error('GLightbox init error:', err);
 }
 
-// Portfolio Filtering — done with jQuery (simple show/hide + fade),
-// independent of Isotope's masonry engine so it works reliably regardless
-// of Bootstrap grid/CSS quirks. This replicates the real project's
-// filter behavior: clicking "App" shows only App items, "Product" shows
-// only Product items, etc., with a smooth fade animation.
+// Portfolio Filtering
 (function () {
   function initPortfolioFilter() {
     if (typeof jQuery === 'undefined') {
@@ -113,7 +108,7 @@ try {
   }
 })();
 
-// Custom animated counter (no external library needed)
+// Custom animated counter 
 (function () {
   const counters = document.querySelectorAll('.purecounter');
   let started = false;
@@ -222,12 +217,7 @@ try {
 })();
 
 /**
- * PHP Email Form Validation (Contact form)
- * Original logic from BootstrapMade php-email-form
- * NOTE: form's "action" points to forms/contact.php which needs
- * a real backend/server to actually send emails. Without that
- * backend, submitting will show an error message (expected).
- */
+ * PHP Email Form Validation (Contact form)*/
 (function () {
   "use strict";
 
