@@ -41,7 +41,6 @@ window.addEventListener('load', () => {
 });
 
 // Initiate glightbox (portfolio image preview)
-// Wrapped in try/catch so a GLightbox load failure doesn't block Isotope below
 try {
   if (typeof GLightbox !== 'undefined') {
     const glightbox = GLightbox({
